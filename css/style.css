@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	padding:0;
+	margin:0;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #282828;
+
+}
+
+.parte{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	background: #282828;
+	overflow: hidden;
+}
+
+
+.parte.left{
+
+	left: 0;
+	background: purple;
+	position: absolute;
+	
+}
+
+.parte.left:before {
+	position:absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: #ff0084;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.parte.right{
+
+	right: 0;
+	background: #282828;
+	position: absolute;
+	
+}
+
+.parte.right:before {
+	position:absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: #282828;
+}
+
+.parte.left, .parte.right, .parte.right:before, .parte.left:before {
+	transition: 1000ms all ease-in-out;
+}
+
+
+.mover-left .left {
+	width: 75%;
+}
+
+.mover-left .right {
+	width: 25%;
+}
+
+
+
+.mover-right .right {
+	width: 75%;
+}
+
+.mover-right .left {
+	width: 25%;
+}
+
+.resumen{
+	position: absolute;
+	background: rgba(255,255,255,.2);
+	padding: 2rem;
+	color: #FFF;
+	text-align: center;
+	border-radius: 10px;
+	left: 50%;
+	top: 60%;
+	transform: translateX(-50%);
+}
+ul{
+	list-style: none;
+}
+.btn-left{
+	background-image: linear-gradient(90deg, #E64C4C 0%, #EF32FB 100%);
+	
+	width: 15rem;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+	border:none !important;
+	color: white;
+	font-size: 1rem;
+	font-family: ubuntu;
+	left: 50%;
+	display: block;
+	position: absolute;
+	transform: translateX(-50%);
+	top: 40%;
+	white-space: nowrap;
+	height: 3.5rem;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 10px;
+
+}
+.btn-right{
+	background-image: linear-gradient(90deg, #E64C4C 0%, #EF32FB 100%);
+	width: 15rem;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+	border:none !important;
+	color: white;
+	font-size: 1rem;
+	font-family: ubuntu;
+	left: 50%;
+	display: block;
+	position: absolute;
+	transform: translateX(-50%);
+	top: 40%;
+	white-space: nowrap;
+	height: 3.5rem;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 10px;
+
+}
+
